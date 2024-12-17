@@ -4,7 +4,7 @@ async function updateTodoAPP(message) {
   await new Promise((res) => setTimeout(res, 4000));
   return message;
 }
-function Thread({ tasks, sendTask }) {
+function TaskList({ tasks, sendTask }) {
   const formRef = useRef();
   async function formAction(formData) {
     addOptimisticMessage(formData.get("task"));
@@ -40,5 +40,5 @@ export default function Counter() {
     const updatedTask = await updateTodoAPP(formData.get("task"));
     setTodoAPP(() => [...todoApp, { text: updatedTask }]);
   }
-  return <Thread tasks={todoApp} sendTask={sendTask} />;
+  return <TaskList tasks={todoApp} sendTask={sendTask} />;
 }
