@@ -7,6 +7,7 @@ import { ThemeProvider } from "./ThemeContext";
 
 import Counter from "./UseOptimisticExample";
 import UseActionStateExample from "./UseActionStateExample";
+import { UseExample } from "./UseExample";
 
 function App() {
   return (
@@ -30,6 +31,8 @@ function App() {
 
         {/* useActionState */}
         <UseActionStateExample />
+        {/* use */}
+        <UseExample />
       </div>
     </ThemeProvider>
   );
