@@ -2,6 +2,7 @@ import { use, Suspense } from "react";
 import { messagePromise } from "./action";
 import { ThemeContext } from "./ThemeContext";
 
+// use is a React API that lets you read the value of a resource like a Promise or context.
 function Message({ messagePromise }) {
   const messageContent = use(messagePromise);
   const { theme, toggleTheme } = use(ThemeContext);
