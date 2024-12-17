@@ -1,5 +1,3 @@
-"use server";
-
 export async function messagePromise() {
   return await new Promise((resolve) => {
     setTimeout(() => {
