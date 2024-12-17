@@ -34,7 +34,7 @@ function TaskList({ tasks, sendTask }) {
   );
 }
 
-export default function Counter() {
+export default function TaskUpdate() {
   const [todoApp, setTodoAPP] = useState([{ text: "Hello Complete JS!" }]);
   async function sendTask(formData) {
     const updatedTask = await updateTodoAPP(formData.get("task"));

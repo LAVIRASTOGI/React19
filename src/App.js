@@ -5,7 +5,7 @@ import DefferedValueExample from "./DefferedValueExample";
 import RefExample from "./RefExample";
 import { ThemeProvider } from "./ThemeContext";
 
-import Counter from "./UseOptimisticExample";
+import TaskUpdate from "./UseOptimisticExample";
 import UseActionStateExample from "./UseActionStateExample";
 import { UseExample } from "./UseExample";
 
@@ -27,7 +27,7 @@ function App() {
         <h1>Form Example</h1>
         <FormChangeExample />
         {/* useOptimistic */}
-        <Counter />
+        <TaskUpdate />
 
         {/* useActionState */}
         <UseActionStateExample />
