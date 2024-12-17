@@ -6,6 +6,7 @@ import RefExample from "./RefExample";
 import { ThemeProvider } from "./ThemeContext";
 
 import Counter from "./UseOptimisticExample";
+import UseActionStateExample from "./UseActionStateExample";
 
 function App() {
   return (
@@ -13,9 +14,22 @@ function App() {
       <title>React 19 application</title>
       <div className="App">
         {/* ref */}
-
+        <h1>React Ref Example</h1>
+        <RefExample />
+        {/* context API */}
+        <h1>React Context API Example</h1>
+        <ContextAPIExample />
+        {/* defferedValueexample */}
+        <DefferedValueExample />
+        <h1>New hook</h1>
+        {/* action and useFormSatus */}
+        <h1>Form Example</h1>
+        <FormChangeExample />
         {/* useOptimistic */}
         <Counter />
+
+        {/* useActionState */}
+        <UseActionStateExample />
       </div>
     </ThemeProvider>
   );
